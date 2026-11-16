@@ -1,0 +1,16 @@
+[package]
+name = "glb-opt"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+gltf = { version = "1.4", features = ["import", "utils"] }
+meshoptimizer-rs = "0.2.15"
+serde_json = "1"
+
+[dev-dependencies]
+bevy = { version = "0.20.1", default-features = false, features = ["bevy_gltf"] }
+bevy_log = "0.20.1"
+bevy_mesh = "0.20.1"
